@@ -29,5 +29,16 @@ const client = new Client({
 client.connect();
 
 app.get("/", (req, res) => {
-  res.sendFile("index.html");
+  res.render("index.ejs");
 });
+app.get("/main", (req, res) => {
+  if (req.session.userID == undefined) {
+    res.render("auth.ejs");
+  } else {
+    res.render("main.ejs");
+  }
+});
+app.post("/register", (req, res) => {});
+app.post("/login", (req, res) => {});
+
+app.listen(3000);
