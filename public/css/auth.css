@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  font-family: "HarmoniaSansW01-Bold", sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+}
+input {
+  margin-top: 20px;
+  padding: 30px;
+  font-size: 27px;
+  background-color: #ecf0f1;
+  border: none;
+  border-radius: 10px;
+  font-family: "HarmoniaSansW01-Bold", sans-serif;
+}
+input:focus {
+  outline: none;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+input:first-child {
+  margin-top: 0px;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div:first-child {
+  height: 100vh;
+  width: 50vw;
+  background-color: white;
+}
+div:last-child {
+  height: 100vh;
+  width: 50vw;
+  background-image: url("../img/authBackground.jpg");
+  background-size: cover;
+  background-position: center;
+}

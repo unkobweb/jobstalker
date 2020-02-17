@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobstalker</title>
+    <link type="text/css" rel="stylesheet" href="/css/auth.css" />
+    <link
+      href="//db.onlinewebfonts.com/c/99f44be299d4608af6fbe99aa38ce446?family=HarmoniaSansW01-Bold"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="icon" type="image/png" href="img/tie.png" />
+  </head>
+  <body>
+    <div>
+      <h1>Connexion</h1>
+      <form method="POST" action="/login">
+        <input type="email" name="mail" placeholder="Email" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Mot de passe"
+          required
+        />
+        <input type="submit" value="Se connecter" />
+      </form>
+    </div>
+    <div>
+      <h1 style="color: white;">Inscription</h1>
+      <form method="POST" action="/register">
+        <input type="email" name="mail" placeholder="Email" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Mot de passe"
+          required
+        />
+        <input
+          type="password"
+          name="confirmPassword"
+          placeholder="Confirmer le mot de passe"
+          required
+        />
+        <input type="submit" value="S'inscrire" />
+      </form>
+    </div>
+  </body>
+</html>
